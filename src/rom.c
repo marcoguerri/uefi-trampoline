@@ -12,7 +12,7 @@
 #include <HttpBootDxe/HttpBootDxe.h>
 STATIC HTTP_BOOT_PRIVATE_DATA  *Private;
 STATIC EFI_LOAD_FILE_PROTOCOL  *LoadFile = NULL;
-STATIC CHAR16 PAYLOAD_URI[] = L"http://192.168.1.105:8000/payload.efi";
+STATIC CHAR16 PAYLOAD_URI[] = L"http://192.168.1.106:8000/payload.efi";
 STATIC
 VOID
 HttpPrivateFromLoadFile (
