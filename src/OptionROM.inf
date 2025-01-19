@@ -1,0 +1,24 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = OptionROM
+  FILE_GUID                      = aabbccdd-aabb-aabb-ccdd-eeffaabbccdd
+  MODULE_TYPE                    = UEFI_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT    		 = MyOptionRomEntry
+
+  VALID_ARCHITECTURES           = IA32 X64
+
+[Sources]
+  rom.c
+
+[Packages]
+  MdePkg/MdePkg.dec 
+  MdeModulePkg/MdeModulePkg.dec
+  NetworkPkg/NetworkPkg.dec
+
+[LibraryClasses]
+  UefiLib
+  UefiDriverEntryPoint
+
+[Protocols]
+  gEfiLoadFileProtocolGuid
