@@ -54,3 +54,6 @@ qemu-system-x86_64  \
 ```
 
 where `rom.bin` is the output of `EfiRom` tool.
+
+
+![rom-executing](https://github.com/marcoguerri/uefi-trampoline/blob/main/img/hello_world.png)
